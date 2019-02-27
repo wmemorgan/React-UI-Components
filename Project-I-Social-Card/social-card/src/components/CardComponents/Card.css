@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
+  text-decoration: none;
+  color: black;
 }
 
 .card-banner, .card-content {
@@ -34,13 +35,8 @@
   font-size: 0.8rem;
 }
 
-.card-content a {
-  font-size: 0.8rem;
-  text-decoration: none;
+.card-content p:last-child {
   margin: 5px 0;
-}
-
-.card-content a:visited {
   color: gray;
 }
 
