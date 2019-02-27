@@ -6,10 +6,10 @@ import CardContent from './CardContent';
 
 function CardContainer() {
   return (
-    <div className="card">
+    <a href="https://reactjs.org" target = "_blank" rel = "noopener noreferrer"  className="card">
       <CardBanner />
       <CardContent />
-    </div>
+    </a>
   )
   
 }
