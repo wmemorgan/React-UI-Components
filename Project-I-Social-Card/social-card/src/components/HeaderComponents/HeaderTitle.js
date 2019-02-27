@@ -7,7 +7,7 @@ function HeaderTitle(props) {
       <h1>Lambda School 
       </h1>
       <nav>
-        <li><a href="#">@LambdaSchool</a></li>
+        <li><a href="https://twitter.com/LambdaSchool">@LambdaSchool</a></li>
         <li>{props.date}</li>
       </nav>
     </div>
