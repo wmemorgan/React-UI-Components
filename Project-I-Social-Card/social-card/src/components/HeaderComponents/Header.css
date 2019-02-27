@@ -1,1 +1,61 @@
 /* All styles for your header Components live here */
+.header-container {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2px;
+}
+
+.img-wrapper {
+  flex: 0 0 30;
+}
+
+nav {
+  display: flex;
+}
+
+img {
+  border: 1px solid green;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header-title h1 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header-title nav {
+  flex: 0 0 25%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.header-title nav * {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: gray;
+}
+
+.header-title li:first-child {
+  list-style-type: none;
+}
+
+.header-content {
+  border: 1.5px solid lightskyblue;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-size: 0.8rem;
+}
