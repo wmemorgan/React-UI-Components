@@ -1,6 +1,5 @@
 /* All styles for your header Components live here */
 .header-container {
-  border: 1px solid red;
   display: flex;
   flex-wrap: nowrap;
   padding: 2px;
@@ -11,14 +10,12 @@
 }
 
 .img-wrapper img {
-  border: 1px solid green;
   width: 100%;
   margin: 0 auto;
 }
 
 .header-content {
   flex: 0 0 90%;
-  border: 1.5px solid lightskyblue;
   display: flex;
   flex-direction: column;
   justify-items: flex-start;
@@ -27,7 +24,6 @@
 }
 
 .header-title {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -42,7 +38,6 @@
 }
 
 .header-title nav {
-  border: 1px solid blue;
   width: 200px;
   display: flex;
   flex-wrap: nowrap;

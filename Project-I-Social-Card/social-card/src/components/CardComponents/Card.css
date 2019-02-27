@@ -1,7 +1,6 @@
 /* All styles for your Card Components live here */
 .card {
   width: 100%;
-  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

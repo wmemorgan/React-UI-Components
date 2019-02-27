@@ -1,7 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
 
 footer {
-  border: 1px solid yellow;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -10,7 +9,6 @@ footer {
 }
 
 footer nav {
-  border: 1px solid red;
   width: 50%;
   display: flex;
   justify-content: space-between;
