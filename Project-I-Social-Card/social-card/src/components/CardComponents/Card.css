@@ -1,1 +1,37 @@
 /* All styles for your Card Components live here */
+.card {
+  width: 100%;
+  border: 1px solid magenta;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+}
+
+.card-banner, .card-content {
+  width: 95%;
+}
+
+.card-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.card-content h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 0.8rem;
+}
+
