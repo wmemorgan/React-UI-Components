@@ -1,13 +1,16 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './Header.css';
 
 function HeaderTitle(props) {
   return (
-    <Fragment>
-    <div>@LambdaSchool 
-      <li>{props.date}</li>
+    <div className="header-title">
+      <h1>Lambda School 
+      </h1>
+      <nav>
+        <li><a href="#">@LambdaSchool</a></li>
+        <li>{props.date}</li>
+      </nav>
     </div>
-    </Fragment>
   );
 }
 
