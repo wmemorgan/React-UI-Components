@@ -1,16 +1,16 @@
 /* All styles for your Card Components live here */
 .card {
   width: 100%;
-  border: 1px solid magenta;
+  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  flex-wrap: nowrap;
-  padding: 0 20px;
+
 }
 
 .card-banner, .card-content {
-  width: 95%;
+  width: 90%;
+  margin-right: 2%;
 }
 
 .card-banner img {
@@ -21,7 +21,6 @@
 .card-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 10px;
   border: 1px solid lightgray;
 }
@@ -33,5 +32,15 @@
 
 .card-content p {
   font-size: 0.8rem;
+}
+
+.card-content a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.card-content a:visited {
+  color: gray;
 }
 
