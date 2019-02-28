@@ -4,10 +4,10 @@
   align-items: center;
 }
 
-.fa-heart {
-  cursor: pointer;
-}
-
 .likes-wrapper * {
   margin: 0 3px;
+}
+
+.fa-heart {
+  cursor: pointer;
 }
