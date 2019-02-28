@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './RefreshButton.css';
 
 class RefreshButton extends Component {
-  constructor() {
-    super()
-    this.state = { clicks: 0 }
+  constructor(props) {
+    super(props)
+    this.state = { clicks: props.clicks }
   }
 
   incrementCounter () {
