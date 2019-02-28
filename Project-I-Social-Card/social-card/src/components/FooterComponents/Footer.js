@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import LikeButton from '../LikeButtonComponents/LikeButton';
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <nav>
         <i className="far fa-comment"></i>
         <i className="fas fa-sync"></i>
-        <i className="far fa-heart"></i>
+        <LikeButton />
         <a href="mailto:contact@lambdaschool.com?subject=React Course Registration">
           <i className="far fa-envelope"></i>
         </a>
