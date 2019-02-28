@@ -16,3 +16,7 @@ footer nav {
   font-size: 1rem;
   color: grey;
 }
+
+footer nav a {
+  color: grey;
+}

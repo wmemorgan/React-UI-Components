@@ -8,7 +8,9 @@ function Footer() {
         <i className="far fa-comment"></i>
         <i className="fas fa-sync"></i>
         <i className="far fa-heart"></i>
-        <i className="far fa-envelope"></i>
+        <a href="mailto:contact@lambdaschool.com?subject=React Course Registration">
+          <i className="far fa-envelope"></i>
+        </a>
       </nav>
     </footer>
   )
