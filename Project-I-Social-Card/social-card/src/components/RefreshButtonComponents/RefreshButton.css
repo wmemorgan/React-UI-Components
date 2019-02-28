@@ -1,0 +1,14 @@
+.refresh-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.refresh-wrapper * {
+  margin: 0 3px;
+}
+
+.fa-sync {
+  cursor: pointer;
+}
+
