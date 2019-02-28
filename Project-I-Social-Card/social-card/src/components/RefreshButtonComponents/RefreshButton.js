@@ -8,15 +8,13 @@ class RefreshButton extends Component {
   }
 
   incrementCounter () {
-    this.setState(prevState => {(
-      this.state = { clicks: prevState.clicks + 1 }
-    )})
+    this.setState(prevState => ({ clicks: prevState.clicks + 1 }))
   }
 
   render() {
     return (
       <div className="refresh-wrapper">
-        <i className="fas fa-sync" onClick={() => incrementCounter()}></i>
+        <i className="fas fa-sync" onClick={() => this.incrementCounter()}></i>
         <div className="refresh-count">{this.state.clicks === 0 ? '' : this.state.clicks}</div>
       </div>
     )
