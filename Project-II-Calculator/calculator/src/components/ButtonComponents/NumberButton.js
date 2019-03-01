@@ -1,10 +1,12 @@
 import React from 'react';
 import './Button.css';
 
-function NumberButton() {
+function NumberButton(props) {
+  console.log(props)
+  const { text } = props
   return (
-    <div className="number-btn">
-      
+    <div className="btn number-btn">
+      {text}
     </div>
   )
 }
