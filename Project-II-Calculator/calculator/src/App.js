@@ -7,7 +7,7 @@ import ButtonContainer from './components/ButtonComponents/ButtonContainer';
 const App = () => {
   return (
     <div className="App">
-      <CalculatorDisplay text='0'/>
+      <CalculatorDisplay elemStyle='calc-display' text='0'/>
       <ButtonContainer />
     </div>
   );

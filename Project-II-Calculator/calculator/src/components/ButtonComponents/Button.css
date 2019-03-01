@@ -20,13 +20,12 @@
   flex: 0 0 75%;
   grid-template-columns: repeat(3, 1fr);
   font-weight: bold;
+  background: white;
 }
 
 .function-keys {
   flex: 0 0 25%;
   grid-template-columns: 1fr;
-  color: white;
-  background: crimson;
 }
 
 .btn {
@@ -35,6 +34,7 @@
   align-items: center;
   font-size: 2.5rem;
   border: 0.5px solid gray;
+  background: white;
 }
 
 @media (max-width: 500px) {
@@ -48,6 +48,12 @@
 }
 
 .action-btn:first-child {
+  font-size: 2.2rem;
   font-weight: normal;
+}
+
+.operator-btn {
+  color: white;
+  background:#A0251D;
 }
 

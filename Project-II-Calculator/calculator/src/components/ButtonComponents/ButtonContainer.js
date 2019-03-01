@@ -11,15 +11,23 @@ function ButtonContainer() {
   return (
     <div className="keypad">
       <div className="data-input-keys">
-        <ActionButton text='clear'/>
+        <ActionButton buttonStyle='btn action-btn' text='clear'/>
         {numbers.map((number) => (
-          <NumberButton text={number} key={number} />
+          <NumberButton 
+            text={number} 
+            key={number}
+            buttonStyle='btn number-btn' 
+          />
         ))}
-        <ActionButton text='0'/>
+        <ActionButton buttonStyle='btn action-btn' text='0'/>
       </div>
       <div className="function-keys">
         {operators.map((operator) => (
-          <NumberButton text={operator} key={operator} />
+          <NumberButton 
+            text={operator} 
+            key={operator} 
+            buttonStyle='btn number-btn operator-btn'
+          />
         ))}
       </div>
     </div>

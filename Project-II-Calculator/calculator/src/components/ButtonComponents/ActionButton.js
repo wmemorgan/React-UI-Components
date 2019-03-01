@@ -2,11 +2,11 @@ import React from 'react';
 import './Button.css';
 
 function ActionButton(props) {
-  const { text } = props
+  const { text, buttonStyle } = props
   return (
-    <div className="btn action-btn">
+    <button className={buttonStyle}>
     {text}
-    </div>
+    </button>
   )
 }
 

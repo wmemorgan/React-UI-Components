@@ -2,9 +2,9 @@ import React from 'react';
 import './Display.css';
 
 function CalculatorDisplay (props) {
-  const { text } = props
+  const { text, elemStyle } = props
   return (
-    <div className="calc-display">
+    <div className={elemStyle}>
       {text}
     </div>
   )
