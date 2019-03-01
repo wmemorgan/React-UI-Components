@@ -6,13 +6,14 @@
 }
 
 .data-input-keys {
-  height: 400px;
   flex: 0 0 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(30px, 50px);
   border: 1px solid gray;
 }
 
 .function-keys {
-  height: 400px;
   flex: 0 0 20%;
   border: 1px solid gray;
   background: crimson;
@@ -20,6 +21,7 @@
 }
 
 .action-btn {
+  grid-column: span 3;
   border: 1px solid magenta;
 }
 
