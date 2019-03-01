@@ -1,1 +1,57 @@
 /* All styles for your header Components live here */
+.header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 2px;
+}
+
+.img-wrapper {
+  flex: 0 0 8%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-content {
+  flex: 0 0 90%;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.header-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header-title h1 {
+  width: 130px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header-title nav {
+  width: 200px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-title nav * {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: gray;
+}
+
+.header-title li:first-child {
+  list-style-type: none;
+}
+

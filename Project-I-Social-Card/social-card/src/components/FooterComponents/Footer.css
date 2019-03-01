@@ -1,0 +1,23 @@
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 8%;
+}
+
+footer nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: grey;
+}
+
+footer nav a {
+  color: grey;
+}
+
