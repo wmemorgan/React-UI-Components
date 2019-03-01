@@ -15,7 +15,6 @@ function ButtonContainer(props) {
       <div className="function-keys">
         <NumberButton keys="operators" />
       </div>
-
     </div>
   )
 }

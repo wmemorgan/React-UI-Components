@@ -1,0 +1,28 @@
+.keypad {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.data-input-keys {
+  height: 400px;
+  flex: 0 0 80%;
+  border: 1px solid gray;
+}
+
+.function-keys {
+  height: 400px;
+  flex: 0 0 20%;
+  border: 1px solid gray;
+  background: crimson;
+  border: 1px solid gray;
+}
+
+.action-btn {
+  border: 1px solid magenta;
+}
+
+.number-btn {
+  border: 1px solid blue;
+}
