@@ -4,7 +4,7 @@ import './Button.css';
 import ActionButton from './ActionButton';
 import NumberButton from './NumberButton';
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const numbers = [7,8,9,4,5,6,1,2,3]
 const operators = ['\xF7', 'x', '\u2212', '+', '=']
 
 function ButtonContainer() {
