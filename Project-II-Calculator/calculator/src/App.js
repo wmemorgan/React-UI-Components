@@ -9,11 +9,18 @@ class App extends Component {
     super()
     this.state = { total: 0 }
     this.displayButton = this.displayButton.bind(this)
+    this.equation = []
   }
 
   displayButton(e) {
-    console.log(e.currentTarget.textContent)
-    this.setState({ total: e.currentTarget.textContent })
+    if (e.currentTarget.textContent === 'clear') {
+      this.setState({ total: 0 })
+      this.equation = []
+    } else {
+      console.log(e.currentTarget.textContent)
+      this.equation.push(e.currentTarget.textContent)
+      this.setState({ total: this.equation })
+    }
   }
 
   render() {
