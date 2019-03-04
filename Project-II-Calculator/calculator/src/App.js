@@ -8,13 +8,19 @@ class App extends Component {
   constructor() {
     super()
     this.state = { total: 0 }
+    this.displayButton = this.displayButton.bind(this)
+  }
+
+  displayButton(e) {
+    console.log(e.currentTarget.textContent)
+    this.setState({ total: e.currentTarget.textContent })
   }
 
   render() {
     return (
       <div className="App">
         <CalculatorDisplay elemStyle='calc-display' text={this.state.total} />
-        <ButtonContainer />
+        <ButtonContainer onDisplayButton={this.displayButton}/>
       </div>
     )
   }

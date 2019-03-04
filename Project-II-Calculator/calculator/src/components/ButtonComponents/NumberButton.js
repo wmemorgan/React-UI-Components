@@ -13,9 +13,9 @@ class NumberButton extends Component {
   }
 
   render () {
-    const { text, buttonStyle, triggerFunc } = this.props
+    const { text, buttonStyle, showButton } = this.props
     return (
-      <button className={buttonStyle} onClick={triggerFunc}>
+      <button className={buttonStyle} onClick={showButton}>
         {text}
       </button>
     )

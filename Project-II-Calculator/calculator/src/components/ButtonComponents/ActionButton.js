@@ -13,10 +13,10 @@ class ActionButton extends Component {
   }
 
   render() {
-    const { text, buttonStyle } = this.props
+    const { text, buttonStyle, showButton } = this.props
 
     return (
-      <button className={buttonStyle}>
+      <button className={buttonStyle} onClick={showButton}>
         {text}
       </button>
     )    

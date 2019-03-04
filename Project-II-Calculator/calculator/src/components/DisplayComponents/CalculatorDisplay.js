@@ -5,7 +5,7 @@ function CalculatorDisplay (props) {
   const { text, elemStyle } = props
   return (
     <div className={elemStyle}>
-      {text}
+      {text === 'clear'? 0 : text}
     </div>
   )
 }
