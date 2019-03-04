@@ -1,4 +1,5 @@
 import React, {Component } from 'react';
+import math from 'mathjs';
 import './App.css';
 
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
@@ -9,17 +10,44 @@ class App extends Component {
     super()
     this.state = { total: 0 }
     this.displayButton = this.displayButton.bind(this)
+    this.calculate = this.calculate.bind(this)
     this.equation = []
   }
 
   displayButton(e) {
-    if (e.currentTarget.textContent === 'clear') {
-      this.setState({ total: 0 })
-      this.equation = []
+    switch (e.currentTarget.textContent) {
+      case 'clear':
+        this.setState({ total: 0 })
+        this.equation = []
+        break
+      case 'x':
+        this.equation.push('*')
+        this.setState({ total: this.equation })
+        break
+      case '÷':
+        this.equation.push('/')
+        this.setState({ total: this.equation })
+        break
+      case '=':
+        let answer = this.calculate(this.equation) 
+        this.setState({ total: answer })
+        this.equation = []
+        this.equation.push(answer)
+        break
+      default:
+        this.equation.push(e.currentTarget.textContent)
+        this.setState({ total: this.equation })
+    }
+  }
+
+  calculate(arr) {
+    let answer = math.eval(arr.join(''))
+    if (answer >= 100000) {
+      return answer.toExponential()
+    } else if ((answer % 1) === 0) {
+      return answer 
     } else {
-      console.log(e.currentTarget.textContent)
-      this.equation.push(e.currentTarget.textContent)
-      this.setState({ total: this.equation })
+      return +parseFloat(answer).toFixed(5)
     }
   }
 
