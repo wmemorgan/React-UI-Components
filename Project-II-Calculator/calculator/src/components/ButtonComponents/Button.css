@@ -35,6 +35,7 @@
   font-size: 2.5rem;
   border: 0.5px solid gray;
   background: white;
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
