@@ -9,7 +9,7 @@ class NumberButton extends Component {
 
   displayNumberButton(e) {
     console.log(e.currentTarget.textContent)
-    this.props.onNumberButtonDisplay(e.currentTarget.textContent)
+    this.props.onClick(e.currentTarget.textContent)
   }
 
   render () {

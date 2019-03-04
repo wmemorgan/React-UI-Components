@@ -15,24 +15,24 @@ class ButtonContainer extends Component {
     this.showKey = this.showKey.bind(this)
   }
   
-  showKey() {
-    console.log(`do something`)
+  showKey(e) {
+    console.log(e.currentTarget.textContent)
   }
 
   render() {
     return (
       <div className="keypad">
         <div className="data-input-keys">
-          <ActionButton buttonStyle='btn action-btn' text='clear' onNumberButtonDisplay={this.showKey} />
+          <ActionButton buttonStyle='btn action-btn' text='clear' onClick={this.showKey} />
           {numbers.map((number) => (
             <NumberButton
               text={number}
               key={number}
               buttonStyle='btn number-btn'
-              onNumberButtonDisplay={this.showKey}
+              onClick={this.showKey}
             />
           ))}
-          <ActionButton buttonStyle='btn action-btn' text='0' onNumberButtonDisplay={this.showKey} />
+          <ActionButton buttonStyle='btn action-btn' text='0' onClick={this.showKey} />
         </div>
         <div className="function-keys">
           {operators.map((operator) => (
@@ -40,7 +40,7 @@ class ButtonContainer extends Component {
               text={operator}
               key={operator}
               buttonStyle='btn number-btn operator-btn'
-              onNumberButtonDisplay={this.showKey}
+              onClick={this.showKey}
             />
           ))}
         </div>
