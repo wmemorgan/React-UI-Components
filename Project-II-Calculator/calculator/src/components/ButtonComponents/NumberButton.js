@@ -1,18 +1,24 @@
-import React from 'react';
+import React, {Component } from 'react';
 import './Button.css';
 
-function NumberButton(props) {
-  const { text, buttonStyle } = props
+class NumberButton extends Component {
+  constructor(props) {
+    super(props)
+    this.displayNumberButton = this.displayNumberButton.bind(this)
+  }
 
-  function displayNumberButton(e) {
+  displayNumberButton(e) {
     console.log(e.currentTarget.textContent)
   }
-  
-  return (
-    <button className={buttonStyle} onClick={displayNumberButton}>
-      {text}
-    </button>
-  )
+
+  render () {
+    const { text, buttonStyle } = this.props
+    return (
+      <button className={buttonStyle} onClick={this.displayNumberButton}>
+        {text}
+      </button>
+    )
+  }
 }
 
 export default NumberButton;
