@@ -23,16 +23,16 @@ class ButtonContainer extends Component {
     return (
       <div className="keypad">
         <div className="data-input-keys">
-          <ActionButton buttonStyle='btn action-btn' text='clear' onClick={this.showKey} />
+          <ActionButton buttonStyle='btn action-btn' text='clear' triggerFunc={this.showKey} />
           {numbers.map((number) => (
             <NumberButton
               text={number}
               key={number}
               buttonStyle='btn number-btn'
-              onClick={this.showKey}
+              triggerFunc={this.showKey}
             />
           ))}
-          <ActionButton buttonStyle='btn action-btn' text='0' onClick={this.showKey} />
+          <ActionButton buttonStyle='btn action-btn' text='0' triggerFunc={this.showKey} />
         </div>
         <div className="function-keys">
           {operators.map((operator) => (
@@ -40,7 +40,7 @@ class ButtonContainer extends Component {
               text={operator}
               key={operator}
               buttonStyle='btn number-btn operator-btn'
-              onClick={this.showKey}
+              triggerFunc={this.showKey}
             />
           ))}
         </div>
