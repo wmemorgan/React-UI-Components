@@ -1,16 +1,23 @@
-import React from 'react';
+import React, {Component } from 'react';
 import './App.css';
 
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import ButtonContainer from './components/ButtonComponents/ButtonContainer';
 
-const App = () => {
-  return (
-    <div className="App">
-      <CalculatorDisplay elemStyle='calc-display' text='0'/>
-      <ButtonContainer />
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = { total: 0 }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <CalculatorDisplay elemStyle='calc-display' text={this.state.total} />
+        <ButtonContainer />
+      </div>
+    )
+  }
 };
 
 export default App;
