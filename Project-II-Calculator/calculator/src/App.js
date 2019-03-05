@@ -9,9 +9,10 @@ class App extends Component {
   constructor() {
     super()
     this.state = { total: 0 }
+    this.equation = []
+
     this.displayButton = this.displayButton.bind(this)
     this.calculate = this.calculate.bind(this)
-    this.equation = []
   }
 
   displayButton(e) {
