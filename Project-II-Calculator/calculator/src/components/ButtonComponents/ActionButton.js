@@ -1,27 +1,13 @@
-import React, {Component } from 'react';
+import React from 'react';
 import './Button.css';
 
-class ActionButton extends Component {
-  constructor(props) {
-    super(props)
-    this.displayNumberButton = this.displayNumberButton.bind(this)
-  }
-
-  displayNumberButton(e) {
-    console.log(e.currentTarget.textContent)
-    this.props.onNumberButtonDisplay(e.currentTarget.textContent)
-  }
-
-  render() {
-    const { text, buttonStyle, showButton } = this.props
-
-    return (
-      <button className={buttonStyle} onClick={showButton}>
-        {text}
-      </button>
-    )    
-  }
+function ActionButton(props) {
+  const { text, buttonStyle, showButton } = props
+  return (
+    <button className={buttonStyle} onClick={showButton}>
+      {text}
+    </button>
+  )  
 }
-
 
 export default ActionButton;
